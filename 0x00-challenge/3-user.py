@@ -54,16 +54,13 @@ class User():
             return False
         if self.__password is None:
             return False
-        if pwd:
-            self.__password = pwd
-            return True
         return hashlib.md5(pwd.encode()).hexdigest().upper() == self.__password
 
 
 if __name__ == '__main__':
     print("Test User")
 
-    user_1 = User()
+    user_1 = User("myPassword")
     if user_1.id is None:
         print("New User should have an id")
 
