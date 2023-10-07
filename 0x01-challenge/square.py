@@ -1,12 +1,14 @@
 #!/usr/bin/python3
+''' fixing the code'''
+
 
 class Square():
-    
+    ''' commenting '''   
     width = 0
     height = 0
 
-    
     def __init__(self, *args, **kwargs):
+        """ initializing """
         for key, value in kwargs.items():
             setattr(self, key, value)
 
@@ -15,10 +17,13 @@ class Square():
         return self.width * self.height
 
     def perimeter_of_my_square(self):
+        """ perimeter of the square """
         return (self.width * 2) + (self.height * 2)
 
     def __str__(self):
+        """ string """
         return "{}/{}".format(self.width, self.height)
+
 
 if __name__ == "__main__":
 
