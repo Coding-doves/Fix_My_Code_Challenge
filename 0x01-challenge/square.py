@@ -3,7 +3,7 @@
 
 
 class Square():
-    ''' commenting '''   
+    ''' commenting '''
     width = 0
     height = 0
 
